@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopVibe - Premium Ecommerce Experience</title>
+    <meta name="description" content="Discover amazing products with stunning animations and modern design">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">ShopVibe</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shopping-bag"></i>
+                <span>ShopVibe</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#categories" class="nav-link">Categories</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." class="search-input" id="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <button class="nav-btn wishlist-btn">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge" id="wishlist-count">0</span>
+                </button>
+                <button class="nav-btn cart-btn" id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge" id="cart-count">0</span>
+                </button>
+                <button class="nav-btn user-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Discover Amazing</span>
+                    <span class="title-line gradient-text">Products</span>
+                    <span class="title-line">With Style</span>
+                </h1>
+                <p class="hero-description">
+                    Experience shopping like never before with our curated collection of premium products and stunning user experience.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" id="shop-now-btn">
+                        <span>Shop Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-secondary" id="explore-btn">
+                        <span>Explore Categories</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="product-showcase">
+                    <div class="showcase-item item-1">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300&h=300&fit=crop" alt="Product 1">
+                    </div>
+                    <div class="showcase-item item-2">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop" alt="Product 2">
+                    </div>
+                    <div class="showcase-item item-3">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=300&fit=crop" alt="Product 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-description">Explore our diverse range of premium products</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-category="electronics">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Electronics</h3>
+                    <p>Latest gadgets and tech</p>
+                    <div class="category-overlay"></div>
+                </div>
+                
+                <div class="category-card" data-category="fashion">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Fashion</h3>
+                    <p>Trendy clothing & accessories</p>
+                    <div class="category-overlay"></div>
+                </div>
+                
+                <div class="category-card" data-category="home">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home & Living</h3>
+                    <p>Beautiful home essentials</p>
+                    <div class="category-overlay"></div>
+                </div>
+                
+                <div class="category-card" data-category="sports">
+                    <div class="category-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Sports</h3>
+                    <p>Fitness & outdoor gear</p>
+                    <div class="category-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="product-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="electronics">Electronics</button>
+                    <button class="filter-btn" data-filter="fashion">Fashion</button>
+                    <button class="filter-btn" data-filter="home">Home</button>
+                    <button class="filter-btn" data-filter="sports">Sports</button>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be dynamically loaded -->
+            </div>
+            
+            <div class="load-more-container">
+                <button class="btn-primary" id="load-more-btn">
+                    <span>Load More Products</span>
+                    <div class="loading-spinner"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+                <button class="btn-primary" id="start-shopping">Start Shopping</button>
+            </div>
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total">
+                <div class="total-row">
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="total-row">
+                    <span>Shipping:</span>
+                    <span class="free">Free</span>
+                </div>
+                <div class="total-row total">
+                    <span>Total:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+            </div>
+            <button class="btn-primary checkout-btn">
+                <span>Proceed to Checkout</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-body">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="modal-main-image" src="" alt="">
+                        <div class="image-zoom-lens"></div>
+                    </div>
+                    <div class="thumbnail-images" id="modal-thumbnails">
+                        <!-- Thumbnails will be loaded dynamically -->
+                    </div>
+                </div>
+                
+                <div class="product-details">
+                    <h2 id="modal-product-name"></h2>
+                    <div class="product-rating">
+                        <div class="stars" id="modal-product-rating"></div>
+                        <span class="rating-count" id="modal-rating-count"></span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price" id="modal-current-price"></span>
+                        <span class="original-price" id="modal-original-price"></span>
+                        <span class="discount" id="modal-discount"></span>
+                    </div>
+                    <p class="product-description" id="modal-product-description"></p>
+                    
+                    <div class="product-options">
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <div class="quantity-controls">
+                                <button class="qty-btn" id="qty-decrease">-</button>
+                                <input type="number" id="qty-input" value="1" min="1">
+                                <button class="qty-btn" id="qty-increase">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn-primary add-to-cart-modal" id="add-to-cart-modal">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                        <button class="btn-secondary add-to-wishlist" id="add-to-wishlist-modal">
+                            <i class="fas fa-heart"></i>
+                            <span>Add to Wishlist</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>ShopVibe</span>
+                    </div>
+                    <p>Experience shopping like never before with our premium collection and stunning user experience.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/viraj-khandare-2a7aa635b/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/virajj._.01/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new products and offers</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopVibe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
